@@ -79,8 +79,8 @@ const getAffixSectionIndices = (instance: Parser): number[] => {
         indices.push(implicitIdx);
     }
 
-    // Normal items have no explicits, don't bother
-    if (instance.rarity === Rarity.Normal) {
+    // Normal items have no explicits, don't bother, also skip if unidentified
+    if (instance.rarity === Rarity.Normal || instance.flags.identified === false) {
         return indices;
     }
 
