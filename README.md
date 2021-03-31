@@ -51,8 +51,6 @@ void (async () => {
         offense: item.offense,
         defense: item.defense,
         baseItem: item.baseItem,
-        map: item.map,
-        quality: item.quality,
         divinationCard: item.divinationCard,
         prophecy: item.prophecy,
         metamorph: item.metamorph,
