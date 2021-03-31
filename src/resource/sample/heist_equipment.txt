@@ -1,0 +1,17 @@
+Rarity: Magic
+Basic Disguise Kit of Bartering
+--------
+This item can be equipped by:
+Niles, the Interrogator
+Gianna, the Master of Disguise
+--------
+Requirements:
+Level 2 in Deception
+--------
+Item Level: 74
+--------
+4% increased Deception speed (implicit)
+--------
+The Ring's Cut reduced by 6%
+--------
+Can only be equipped to Heist members.

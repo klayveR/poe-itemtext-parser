@@ -1,0 +1,20 @@
+Rarity: Normal
+Sulphur Flask
+--------
+Lasts 8.0 (augmented) Seconds
+Consumes 20 of 60 Charges on use
+Currently has 0 Charges
+40% increased Damage
+--------
+Requirements:
+Level: 35
+--------
+Item Level: 73
+--------
+100% increased Duration. -1% to this value when used (enchant)
+--------
+Creates Consecrated Ground on Use (implicit)
+--------
+Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.
+--------
+Note: ~price 3 alt

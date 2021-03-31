@@ -1,0 +1,11 @@
+Rarity: Magic
+Healthy Leather Belt
+--------
+Requirements:
+Level: 8
+--------
+Item Level: 37
+--------
++27 to maximum Life (implicit)
+--------
++16 to maximum Life

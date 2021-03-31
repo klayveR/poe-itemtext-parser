@@ -1,0 +1,33 @@
+Rarity: Rare
+Fate Branch
+Synthesised Tornado Wand
+--------
+Wand
+Quality: +30% (augmented)
+Physical Damage: 25-75
+Elemental Damage: 24-45 (augmented), 5-154 (augmented)
+Critical Strike Chance: 7.00%
+Attacks per Second: 1.30
+--------
+Requirements:
+Level: 65
+Int: 212
+--------
+Sockets: W-W-W 
+--------
+Item Level: 82
+--------
+Quality does not increase Physical Damage (enchant)
+Grants 1% increased Elemental Damage per 2% Quality (enchant)
+--------
+Enemies you Kill Explode, dealing 3% of their Life as Physical Damage (implicit)
+--------
++13% to Damage over Time Multiplier
+Adds 24 to 45 Fire Damage
+Adds 5 to 154 Lightning Damage
++92 to Accuracy Rating
+Veiled Suffix
+--------
+Synthesised Item
+--------
+Note: ~price 0.5 jewellers

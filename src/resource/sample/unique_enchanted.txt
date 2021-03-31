@@ -1,0 +1,25 @@
+Rarity: Unique
+The Covenant
+Spidersilk Robe
+--------
+Energy Shield: 312 (augmented)
+--------
+Requirements:
+Level: 49
+Int: 134
+--------
+Sockets: B 
+--------
+Item Level: 80
+--------
+Quality does not increase Defences (enchant)
+Grants +1 to Intelligence per 2% Quality (enchant)
+--------
+Socketed Gems are Supported by Level 15 Added Chaos Damage
+Socketed Gems have Blood Magic
++26 to Intelligence
+225% increased Energy Shield
+10% increased maximum Life
+--------
+My Soul is your Strength
+My Price is your Blood

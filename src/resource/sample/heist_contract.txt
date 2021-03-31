@@ -1,0 +1,28 @@
+Rarity: Rare
+Sorrow Orders
+Contract: Bunker
+--------
+Client: Count Geonor
+Heist Target: Urn of the Original Ashes (Moderate Value)
+Area Level: 59
+Requires Demolition (Level 1)
+Item Quantity: +55% (augmented)
+Item Rarity: +32% (augmented)
+Alert Level Reduction: +21% (augmented)
+Time Before Lockdown: +21% (augmented)
+Maximum Alive Reinforcements: +21% (augmented)
+--------
+Item Level: 59
+--------
+22% more Rare Monsters
+Rare Monsters each have a Nemesis Mod
+Reinforcements have 15% increased Attack Speed
+Reinforcements have 16% increased Cast Speed
+Reinforcements have 12% increased Movement Speed
+All Monster Damage from Hits always Ignites
+Players have 20% less Recovery Rate of Life and Energy Shield
+--------
+"A great fire once swept the land, and our leaders were turned to ash where they stood.
+The urn contains exactly what you think it does, and serves as proof of our long lineage."
+--------
+Give this Contract to Adiyah in the Rogue Harbour to embark on the Heist.

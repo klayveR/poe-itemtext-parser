@@ -1,0 +1,24 @@
+Rarity: Rare
+Torment Finger
+Sapphire Ring
+--------
+Quality (Caster Modifiers): +1% (augmented)
+--------
+Requirements:
+Level: 48
+--------
+Item Level: 70
+--------
+Minions summoned by Your Sentinel Towers have 25% increased Damage (enchant)
+--------
+Grants Level 23 Frostbite Skill (implicit)
+--------
++16% to Fire Resistance (fractured)
+Adds 3 to 7 Fire Damage to Attacks
++15% to all Elemental Resistances
++34% to Lightning Resistance
+Adds 14 to 24 Cold Damage to Attacks (crafted)
+--------
+Corrupted
+--------
+Fractured Item

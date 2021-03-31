@@ -1,0 +1,13 @@
+Rarity: Rare
+Spirit Desire
+Viridian Jewel
+--------
+Item Level: 68
+--------
++7 to all Attributes
+10% increased Damage over Time
+12% increased Attack Damage while Dual Wielding
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.
+--------
+Note: ~price 1 jewellers

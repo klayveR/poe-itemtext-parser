@@ -1,0 +1,28 @@
+Rarity: Unique
+You cannot use this item. Its stats will be ignored
+--------
+Voll's Protector
+Holy Chainmail
+--------
+Quality: +10% (augmented)
+Armour: 330 (augmented)
+Energy Shield: 66 (augmented)
+--------
+Requirements:
+Level: 67
+Str: 53
+Dex: 113 (unmet)
+Int: 146 (unmet)
+--------
+Sockets: G-W-G-W-R G 
+--------
+Item Level: 61
+--------
+60% increased Armour and Energy Shield
+50% reduced maximum Mana
+Gain a Power Charge for each Enemy you hit with a Critical Strike
+--------
+Although a great leader during the war,
+Voll proved disastrous in times of peace.
+--------
+Corrupted

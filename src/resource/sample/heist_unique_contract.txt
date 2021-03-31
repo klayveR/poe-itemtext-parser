@@ -1,0 +1,16 @@
+Rarity: Unique
+Contract: Heart of Glory
+Familial Contract
+--------
+Client: Adiyah
+Heist Target: Confront Nashta
+Area Level: 81
+Requires Perception (Level 4)
+Requires Adiyah, the Wayfinder
+--------
+Item Level: 81
+--------
+"A part of me still believes I can convince Nashta to give up her rebellious ways and come home. That part
+of me will forever be nine years of age, futilely chasing her as she runs off into the dunes yet again."
+--------
+Give this Contract to Adiyah in the Rogue Harbour to embark on the Heist.

@@ -1,0 +1,25 @@
+Rarity: Rare
+Entropy Splinter
+Large Cluster Jewel
+--------
+Requirements:
+Level: 54
+--------
+Item Level: 75
+--------
+Adds 8 Passive Skills (enchant)
+2 Added Passive Skills are Jewel Sockets (enchant)
+Added Small Passive Skills grant: 12% increased Cold Damage (enchant)
+--------
+1% reduced Mana Reserved (implicit)
+--------
+Added Small Passive Skills also grant: +5% to Fire Resistance
+1 Added Passive Skill is Blanketed Snow
+1 Added Passive Skill is Prismatic Heart
+1 Added Passive Skill is Widespread Destruction
+--------
+Place into an allocated Large Jewel Socket on the Passive Skill Tree. Added passives do not interact with jewel radiuses. Right click to remove from the Socket.
+--------
+Corrupted
+--------
+Note: ~price 80 exalted

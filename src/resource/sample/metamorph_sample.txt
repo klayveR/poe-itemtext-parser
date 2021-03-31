@@ -1,0 +1,14 @@
+Rarity: Unique
+Herald of Thunder's Brain
+--------
+Uses: Shock Cascade
+--------
+Item Level: 77
+--------
+Drops an Incursion Weapon
+Drops additional Rare Armour
+Drops additional Essences
+--------
+Combine this with four other different samples in Tane's Laboratory.
+--------
+Note: ~price 1 alch

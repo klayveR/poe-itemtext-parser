@@ -1,0 +1,17 @@
+Rarity: Magic
+Trapper Boots of the Yeti
+--------
+Quality: +19% (augmented)
+Evasion Rating: 88 (augmented)
+Energy Shield: 18 (augmented)
+--------
+Requirements:
+Level: 41
+Dex: 40
+Int: 40
+--------
+Sockets: G B 
+--------
+Item Level: 53
+--------
++24% to Cold Resistance

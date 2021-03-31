@@ -1,0 +1,17 @@
+Rarity: Unique
+The Builder
+Platinum Glennach Cairns Watchstone
+--------
+Item Level: 86
+--------
+Armourer's Scraps found in Areas have 1.3% chance to drop as a full stack
+17% increased Stack size of Simulacrum Splinters found in Areas
+Red Beasts in Areas have 134% increased chance to be from The Caverns
+Zana Missions in Areas have 3 additional Map options
+15 uses remaining
+--------
+"The Shade walked the land with no end in sight,
+no purpose in mind,
+but the one it invented to pass the time."
+--------
+Socket this into a Citadel on your Atlas to increase the Tier of Maps and reveal hidden Maps in that Citadel's Region. You can only socket one Crimson, Viridian, Cobalt or Golden Watchstone into each Citadel.

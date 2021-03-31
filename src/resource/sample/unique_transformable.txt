@@ -1,0 +1,34 @@
+Rarity: Unique
+Hand of Thought and Motion
+Blinder
+--------
+Claw
+Quality: +20% (augmented)
+Physical Damage: 14-37 (augmented)
+Elemental Damage: 1-50 (augmented)
+Critical Strike Chance: 6.30%
+Attacks per Second: 1.77 (augmented)
+Weapon Range: 11
+--------
+Requirements:
+Level: 22
+Dex: 41
+Int: 41
+--------
+Sockets: B 
+--------
+Item Level: 83
+--------
++12 Life gained for each Enemy hit by Attacks (implicit)
+--------
+Adds 1 to 50 Lightning Damage
+14% increased Attack Speed
+Adds 1 to 5 Lightning Damage to Attacks with this Weapon per 10 Intelligence
+23% increased Elemental Damage with Attack Skills
+--------
+She carries us and nurtures us
+until we must feed upon each other.
+
+This item can be transformed with a Blessing of Esh
+--------
+Note: ~price 1 chaos

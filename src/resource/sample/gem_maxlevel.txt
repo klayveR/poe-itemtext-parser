@@ -1,0 +1,43 @@
+Rarity: Gem
+Discipline
+--------
+Aura, Vaal, Spell, AoE, Duration
+Level: 20 (Max)
+Mana Reserved: 35%
+Cooldown Time: 1.20 sec
+Cast Time: Instant
+Quality: +12% (augmented)
+Alternate Quality
+--------
+Requirements:
+Level: 70
+Int: 155
+--------
+Casts an aura that grants additional energy shield and increased energy shield recharge rate to you and your allies.
+--------
++19 to radius
+You and nearby allies gain 217 additional Energy Shield
+You and nearby Allies have 3% increased Damage while on Full Energy Shield
+You and nearby Allies gain 30% increased Energy Shield Recharge rate
+--------
+Anomalous Vaal Discipline
+--------
+Cooldown Time: 0.50 sec
+Souls Per Use: 50
+Can Store 1 Use
+Soul Gain Prevention: 5 sec
+Cast Time: Instant
+--------
+Casts a temporary aura that prevents energy shield recharge being delayed by damage taken for you and your allies.
+--------
+Base duration is 3.00 seconds
+Modifiers to Buff Duration also apply to this Skill's Soul Gain Prevention
++19 to radius
+24% increased Area of Effect
+Your and nearby allies' Energy Shield Recharges are not delayed by Damage
+--------
+Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.
+--------
+Corrupted
+--------
+Note: ~price 0.5 exalted

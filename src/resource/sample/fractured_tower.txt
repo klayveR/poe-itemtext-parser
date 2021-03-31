@@ -1,0 +1,35 @@
+Rarity: Rare
+Insane Shelter
+Tower Map
+--------
+Map Tier: 2
+Atlas Region: Glennach Cairns
+Item Quantity: +94% (augmented)
+Item Rarity: +36% (augmented)
+Monster Pack Size: +23% (augmented)
+Quality: +35% (augmented)
+--------
+Item Level: 70
+--------
+Does not consume Sextant Uses (enchant)
+Delirium Reward Type: Currency (enchant)
+Delirium Reward Type: Currency (enchant)
+Delirium Reward Type: Currency (enchant)
+Delirium Reward Type: Currency (enchant)
+Delirium Reward Type: Currency (enchant)
+Players in Area are 100% Delirious (enchant)
+Area contains an additional Blight Encounter (enchant)
+--------
+30% more Rare Monsters (fractured)
+Rare Monsters each have a Nemesis Mod (fractured)
+Area has increased monster variety
+Monsters have 30% chance to Avoid Elemental Ailments
+Monsters gain an Endurance Charge on Hit
+Players have 20% less Armour
+Players have 20% reduced Chance to Block
+--------
+Travel to this Map by using it in a personal Map Device. Maps can only be used once.
+--------
+Fractured Item
+--------
+Note: ~price 0.5 jewellers
