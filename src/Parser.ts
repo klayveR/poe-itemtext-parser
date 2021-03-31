@@ -35,33 +35,6 @@ export class Parser {
     protected parseMetamorph = Parsers.parseMetamorph;
 
     @Memoize()
-    public get parsed(): Record<string, unknown> {
-        return {
-            baseItem: this.baseItem,
-            rarity: this.rarity,
-            name: this.name,
-            itemLevel: this.itemLevel,
-            note: this.note,
-            flags: this.flags,
-            requirements: this.requirements,
-            offense: this.offense,
-            defense: this.defense,
-            flask: this.flask,
-            sockets: this.sockets,
-            stackSize: this.stackSize,
-            beast: this.beast,
-            gem: this.gem,
-            talisman: this.talisman,
-            affixes: this.affixes,
-            map: this.map,
-            quality: this.quality,
-            divinationCard: this.divinationCard,
-            prophecy: this.prophecy,
-            metamorph: this.metamorph,
-        };
-    }
-
-    @Memoize()
     public get rarity(): Enums.Rarity {
         return this.parseRarity();
     }
