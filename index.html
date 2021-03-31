@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@klayver/poe-itemtext-parser</title>
+	<meta name="description" content="Documentation for @klayver/poe-itemtext-parser">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@klayver/poe-itemtext-parser</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@klayver/poe-itemtext-parser</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#path-of-exile-itemtext-parser" id="path-of-exile-itemtext-parser" style="color: inherit; text-decoration: none;">
+					<h1>Path of Exile Itemtext Parser</h1>
+				</a>
+				<p>Parses itemtexts from the Path of Exile client (obtained via CTRL+C).</p>
+				<p>Please check out the <a href="https://klayver.github.io/poe-itemtext-parser/">documentation</a> for more information.</p>
+				<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+					<h1>Getting started</h1>
+				</a>
+				<p><strong>Install with npm:</strong></p>
+				<pre><code class="language-bash"><span style="color: #000000">$ npm i @klayver/poe-itemtext-parser --save</span>
+</code></pre>
+				<a href="#known-issues" id="known-issues" style="color: inherit; text-decoration: none;">
+					<h1>Known issues</h1>
+				</a>
+				<ul>
+					<li>  Affixes are parsed incorrectly for magic, rare and unique items that have no explicit affixes</li>
+				</ul>
+				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+					<h1>Example</h1>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">fs</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;fs&quot;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">util</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;util&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Parser</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@klayver/poe-itemtext-parser&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">readFile</span><span style="color: #000000"> = </span><span style="color: #001080">util</span><span style="color: #000000">.</span><span style="color: #795E26">promisify</span><span style="color: #000000">(</span><span style="color: #001080">fs</span><span style="color: #000000">.</span><span style="color: #001080">readFile</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">void</span><span style="color: #000000"> (</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">itemtext</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">readFile</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;some_itemtext.txt&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;UTF-8&quot;</span><span style="color: #000000">);</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">item</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Parser</span><span style="color: #000000">(</span><span style="color: #001080">itemtext</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">data</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">        </span><span style="color: #001080">rarity:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">rarity</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">name</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">flags:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">flags</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">sockets:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">sockets</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">note:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">note</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">itemLevel:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">itemLevel</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">quality:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">quality</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">stackSize:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">stackSize</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">gem:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">gem</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">requirements:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">requirements</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">map:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">map</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">talisman:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">talisman</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">beast:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">beast</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">affixes:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">affixes</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">flask:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">flask</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">offense:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">offense</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">defense:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">defense</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">baseItem:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">baseItem</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">map:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">map</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">quality:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">quality</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">divinationCard:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">divinationCard</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">prophecy:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">prophecy</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">metamorph:</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">metamorph</span><span style="color: #000000">,</span>
+<span style="color: #000000">    };</span>
+
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #267F99">JSON</span><span style="color: #000000">.</span><span style="color: #795E26">stringify</span><span style="color: #000000">(</span><span style="color: #001080">data</span><span style="color: #000000">));</span>
+<span style="color: #000000">})();</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/itemtext.html" class="tsd-kind-icon">Item<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/parser.html" class="tsd-kind-icon">Parser</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/section.html" class="tsd-kind-icon">Section</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/affix.html" class="tsd-kind-icon">Affix</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/beast.html" class="tsd-kind-icon">Beast</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/damagerange.html" class="tsd-kind-icon">Damage<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/defense.html" class="tsd-kind-icon">Defense</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/divinationcard.html" class="tsd-kind-icon">Divination<wbr>Card</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/flags.html" class="tsd-kind-icon">Flags</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/flask.html" class="tsd-kind-icon">Flask</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gem.html" class="tsd-kind-icon">Gem</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/map.html" class="tsd-kind-icon">Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/metamorph.html" class="tsd-kind-icon">Metamorph</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/offense.html" class="tsd-kind-icon">Offense</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/prophecy.html" class="tsd-kind-icon">Prophecy</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/quality.html" class="tsd-kind-icon">Quality</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/requirements.html" class="tsd-kind-icon">Requirements</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sockets.html" class="tsd-kind-icon">Sockets</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/stacksize.html" class="tsd-kind-icon">Stack<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/talisman.html" class="tsd-kind-icon">Talisman</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
