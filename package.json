@@ -1,6 +1,6 @@
 {
     "name": "@klayver/poe-itemtext-parser",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Parser for Path of Exile clipboard item texts.",
     "scripts": {
         "build": "tsc && tscpaths -p tsconfig.json -s ./src -o ./dist",
