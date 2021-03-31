@@ -1,5 +1,7 @@
 # Path of Exile Itemtext Parser
 
+[![NPM version](https://img.shields.io/npm/v/@klayver/poe-itemtext-parser?style=for-the-badge)](https://www.npmjs.com/package/@klayver/poe-itemtext-parser) [![NPM license](https://img.shields.io/npm/l/@klayver/poe-itemtext-parser?style=for-the-badge)](https://github.com/klayveR/poe-itemtext-parser/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/klayveR/poe-itemtext-parser?style=for-the-badge)](https://github.com/klayveR/poe-itemtext-parser/issues) [![GitHub language](https://img.shields.io/github/languages/top/klayveR/poe-itemtext-parser?style=for-the-badge)](https://github.com/klayveR/poe-itemtext-parser)
+
 Parses itemtexts from the Path of Exile client (obtained via CTRL+C).
 
 Please check out the [documentation](https://klayver.github.io/poe-itemtext-parser/) for more information.
