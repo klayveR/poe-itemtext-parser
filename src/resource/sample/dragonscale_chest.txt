@@ -1,0 +1,31 @@
+Item Class: Body Armours
+Rarity: Rare
+Havoc Carapace
+Full Dragonscale
+--------
+Quality: +20% (augmented)
+Armour: 1019 (augmented)
+Evasion Rating: 933 (augmented)
+--------
+Requirements:
+Level: 68
+Str: 148
+Dex: 108
+Int: 67
+--------
+Sockets: G-R-B-R-R-G 
+--------
+Item Level: 72
+--------
+1% less Damage Taken per 230 Dexterity (implicit)
+15% increased Cold Damage (implicit)
+--------
++63 to Evasion Rating
+76% increased Armour and Evasion
++30 to maximum Life
++13% to Fire Resistance
++38% to Lightning Resistance
+16% increased Stun and Block Recovery
+Reflects 30 Physical Damage to Melee Attackers
+Searing Exarch Item
+Eater of Worlds Item

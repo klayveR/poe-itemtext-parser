@@ -24,6 +24,11 @@ export function parseAffixes(this: Parser): Affix[] | undefined {
 
         for (const line of section.lines) {
             const affix = stringToAffix(line);
+
+            if (affix === null) {
+                continue;
+            }
+
             affixes.push(affix);
         }
     }
@@ -31,13 +36,20 @@ export function parseAffixes(this: Parser): Affix[] | undefined {
     return affixes;
 }
 
-const stringToAffix = (affixString: string): Affix => {
+const stringToAffix = (affixString: string): Affix|null => {
     const affix: Affix = {
         text: affixString,
         formatted: "",
         values: [],
         type: AffixType.Explicit,
     };
+
+    if (
+        Patterns.InfluenceEaterOfWorlds.test(affixString) ||
+        Patterns.InfluenceSearingExarch.test(affixString)
+        ) {
+        return null;
+    }
 
     // Determine flags and remove them from text
     affix.text = affixString

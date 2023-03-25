@@ -22,6 +22,8 @@ export function parseBaseItem(this: Parser): string {
     // If Rare/Unique: line 3, if Normal/Magic: line 2
     let baseItem = section.lines.length === 3 ? section.lines[2] : section.lines[1];
 
+    baseItem = section.lines.length === 4 ? section.lines[3] : baseItem;
+
     // Check if this base item is in game files
     // This will remove prefix/suffix from magic items, synthesised prefix, blighted prefix, ...
     const found = Object.values(BaseItems).find((item) => {
