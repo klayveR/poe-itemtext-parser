@@ -11,6 +11,8 @@ export function parseFlags(this: Parser): Flags {
             redeemer: Patterns.InfluenceRedeemer.test(this.itemtext.raw),
             hunter: Patterns.InfluenceHunter.test(this.itemtext.raw),
             crusader: Patterns.InfluenceCrusader.test(this.itemtext.raw),
+            eaterOfWorlds: Patterns.InfluenceEaterOfWorlds.test(this.itemtext.raw),
+            searingExarch: Patterns.InfluenceSearingExarch.test(this.itemtext.raw)
         },
         relic: Patterns.Relic.test(this.itemtext.raw),
         replica: Patterns.Replica.test(this.name),

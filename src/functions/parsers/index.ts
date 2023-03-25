@@ -19,3 +19,4 @@ export * from "./parseRequirements";
 export * from "./parseSockets";
 export * from "./parseStackSize";
 export * from "./parseTalisman";
+export * from './parseItemClass';

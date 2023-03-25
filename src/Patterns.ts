@@ -39,6 +39,8 @@ export const Patterns = {
     InfluenceRedeemer: /^Redeemer Item$/m,
     InfluenceShaper: /^Shaper Item$/m,
     InfluenceWarlord: /^Warlord Item$/m,
+    InfluenceEaterOfWorlds: /^Eater of Worlds Item$/m,
+    InfluenceSearingExarch: /^Searing Exarch Item$/m,
     ItemLevel: /^Item\sLevel:\s(\d+)/m,
     MapBlighted: /^Blighted\s(.+\sMap)$/m,
     MapElder: /^Elder\s(.+\sMap)$/m,
@@ -74,6 +76,7 @@ export const Patterns = {
     VaalGem: /^(.*Vaal .+)$/gm,
     WatchstoneUses: /\d uses remaining/g,
     WeaponRange: /^Weapon\sRange:\s(\d+)/m,
+    ItemClass: /^Item Class:\s(.+)$/m
 } as const;
 
 export type Patterns = keyof typeof Patterns;

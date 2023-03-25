@@ -12,6 +12,7 @@ export class Parser {
         this.itemtext = new ItemText(itemtext);
     }
 
+    protected paseItemClass = Parsers.parseItemClass;
     protected parseRarity = Parsers.parseRarity;
     protected parseName = Parsers.parseName;
     protected parseItemLevel = Parsers.parseItemLevel;
@@ -33,6 +34,11 @@ export class Parser {
     protected parseDivinationCard = Parsers.parseDivinationCard;
     protected parseProphecy = Parsers.parseProphecy;
     protected parseMetamorph = Parsers.parseMetamorph;
+
+    @Memoize()
+    public get itemClass(): string {
+        return this.paseItemClass();
+    }
 
     @Memoize()
     public get rarity(): Enums.Rarity {
